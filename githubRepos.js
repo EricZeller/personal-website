@@ -18,7 +18,11 @@ fetch('https://api.github.com/users/marupx/repos')
             const card = document.createElement("div");
             card.className = "repo-card";
 
-            card.innerHTML = '<a href="' + repo.html_url + '" target="_blank">' + repo.name + '</a>' + '<p>' + (repo.description || "Keine Beschreibung verfügbar.") + '</p>' + '<p>' + "Language: " + repo.language + '</p>';
+            card.innerHTML = `
+                <a href="'${repo.html_url}'" target="_blank">${repo.name}</a>
+                <p>${repo.description || "Keine Beschreibung verfügbar."}</p>
+                <p>Language: ${repo.language}</p>
+                `;
 
             container.appendChild(card);
         });

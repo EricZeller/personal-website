@@ -7,8 +7,8 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(80, 50, 101);
-    background-color: rgba(228, 192, 244, 0.5);
+    color: black;
+    background-color: #f9f6f3;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -23,7 +23,7 @@ main {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    background-color: rgb(37, 25, 42);
+    background-color: #f9f6f3;
 }
 
 .Logo {
@@ -39,8 +39,9 @@ main {
 
 .navbar-links a {
     font-size: larger;
-    color: white;
+    color: black;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .navbar-links a:hover {
@@ -52,38 +53,39 @@ main {
 .column {
     float: left;
     width: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .IntroductionText {
     display: block;
-    padding-left: 200px;
-    padding-top: 250px;
-    padding-right: 100px;
+    padding-left: 10%;
+    padding-top: 50%;
+    text-align: center;
 }
 
 .IntroductionText h1 {
     font-size: 2.5em;
-}
-
-.IntroductionText p {
-    margin-bottom: 20px;
+    margin-bottom: 10%;
 }
 
 #welcomePhoto {
-    width: 500px;
-    margin-left: 250px;
-    margin-bottom: 25px;
+    max-width: 100%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 5%;
+    border-radius: 10px;
 }
 
 .footer {
-    background-color: rgb(37, 25, 42);
+    background-color: #f9f6f3;
     padding: 1rem;
     width: 100%;
 }
 
 #footerIcon {
     font-size: 2em;
-    color: white;
+    color: black;
 }
 
 .section {
@@ -94,10 +96,10 @@ main {
 
 .repo-card {
   border-radius: 8px;
-  border: 2px solid rgb(80, 50, 101);
+  border: 2px solid black;
   padding: 15px;
   margin-bottom: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 5px black;
   transition: transform 0.2s ease;
   width: 60%;
   margin-left: 20%;
@@ -110,7 +112,7 @@ main {
 
 .repo-card a {
   font-weight: bold;
-  color: rgb(80, 50, 101);
+  color: black;
   text-decoration: none;
   font-size: 1.2em;
 }
@@ -118,4 +120,77 @@ main {
 .repo-card p {
   margin: 5px 0 0;
   color: black;
+}
+
+.blogger-card {
+  border-radius: 8px;
+  border: 2px solid black;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px black;
+  transition: transform 0.2s ease;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.blogger-card:hover {
+  transform: translateY(-3px);
+}
+
+.blogger-card a {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.blogger-card p {
+  margin: 5px 0 0;
+  color: black;
+}
+
+form {
+    text-align: center;
+    
+}
+
+input[type=text], [type=email] {
+    width: 15%;
+    padding: 12px 20px;
+    border: 1px white;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+#message {
+    width: 40%;
+    height: 150px;
+    resize: none;
+}
+
+input[type=Submit] {
+    background-color: rgb(37, 25, 42);
+    border: 3px solid rgb(80, 50, 101);
+    border-radius: 10px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+.bau-hinweis {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgba(200, 0, 0);
+    text-transform: uppercase;
+    pointer-events: none;
+    z-index: 9999;
+    white-space: nowrap;
 }
